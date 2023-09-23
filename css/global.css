@@ -1,0 +1,29 @@
+/* Define a fonte padrão para todos os elementos com 'Roboto' e um fallback para sans-serif */
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /* Define a caixa de modelagem de borda para todos os elementos */
+}
+
+
+    body {
+        background-color: #333;
+    }
+
+
+/* Estiliza a classe 'content', que provavelmente é a área principal de conteúdo da página */
+.content {
+    width: 100vw; 
+    height: 100vh; 
+    padding: 1rem; 
+    background-color: #fff; 
+}
+
+/* Define estilos específicos para a classe 'content' quando a largura da tela for maior ou igual a 992px */
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px; 
+        height: auto; 
+        margin: 1rem auto; 
+        border-radius: 1rem; 
+    }
+}
